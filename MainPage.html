@@ -5,80 +5,142 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/yukesh style.css">
+
+ <link rel="stylesheet" href="css/yukesh style.css">
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+ </head>
+  
+ <body>
 
-    </head>
-    <body class="h-100">
-        <nav class="navbar navbar-expand-lg bg-dark text-white">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="active" >
-                        <a class="navbar-band" style="color: whitesmoke;text-decoration-style: wavy;" href="#">
-                            NALLA ERUPOM
-                        </a>
-                    </li>
-                    <li >
-                        <a class="nav-link" style="color: whitesmoke;text-decoration-style: wavy;" href="#">
-                            <span style="color: white;">Home</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a class="nav-link" style="color: whitesmoke;text-decoration-style: wavy;" href="#">
-                            <span style="color: white;">Blog</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="dropdown navbar-right">
-                    <button 
-                    id="option-id"
-                    class="btn btn-light dropdown-toggle bg-dark text-white"
-                    type="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >
-                        Options
-                    </button>
-                    <div 
-                    class="dropdown-menu"
-                    aria-labelledby="option-id"
-                    >
-                    <a class="dropdowm-item" id="btn-logout" href="#">
-                        Logout
-                    </a>
+    <div class="root">
+        
+        <div class="side-nav ">
+            <a href="/MainPage.html" class="menu-icon menu-selected"><i class="material-icons">local_pharmacy</i></a>
+            <a href="" class="menu-icon"><i class="material-icons">masks</i></a>
+            <a href="" class="menu-icon"><i class="material-icons">edit</i></a>
+            <a href="" class="menu-icon"><i class="material-icons">phone</i></a>
+            <a href="" class="menu-icon" id="btn-logout"><i class="material-icons">logout</i></a>
+        </div>
+        </div>
+
+        <div class="dashboard-main-container ">
+            <div class="title">
+                <h3>Nanga Irukom</h3>
+                <i class="material-icons">local_hospital</i>
+            </div>
+            
+            <div class="title-underline"></div>
+            <div class="row">
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/neurologist.html">
+                            <img src="/images/p01.jpg" alt="" class="card-img-top category-img">
+
+                            <div class="card-body">
+                                <h5 class="card-title">NEUROLOGY</h5>
+                                
+                            </div>
+                        </a>                            
                     </div>
-                </div>  
-            </div>
-        </nav>
-         
-        <div class="row h-100 bg-light">
-            <div class="col-lg-0 bg-secondary">
-                <ul class="nav flex-colum">
-
-                </ul>
-            </div>
-            <div class="col-lg-12">
-                <div class="container" id="container">
-
                 </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/cardiologist.html">
+                            <img src="/images/p02.jpg" alt="" class="card-img-top category-img">
+                        
+                            <div class="card-body">
+                                <h5 class="card-title">CARDIOLOGY</h5>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/pediatrician.html">
+                            <img src="/images/p06.jpg" alt="" class="card-img-top category-img">
+                        
+                            <div class="card-body">
+                                <h5 class="card-title">PEDIATRICIAN</h5>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/opthamologist.html">
+                            <img src="/images/p04.jpg" alt="" class="card-img-top category-img">
+                        
+                            <div class="card-body">
+                                <h5 class="card-title">OPTHAMOLOGY</h5>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/ortho.html">
+                            <img src="/images/p05.jpg" alt="" class="card-img-top category-img">
+                        
+                            <div class="card-body">
+                                <h5 class="card-title">ORTHO</h5>
+                            </div>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/dental.html">
+                            <img src="/images/p03.jpg" alt="" class="card-img-top category-img">
+
+                            <div class="card-body">
+                                <h5 class="card-title">DENTAL</h5>
+                            </div>
+                        </a>                            
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/gynocology.html">
+                            <img src="/images/p07.jpg" alt="" class="card-img-top category-img">
+
+                            <div class="card-body">
+                                <h5 class="card-title">GYNOCOLOGY</h5>
+                            </div>
+                        </a>                            
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <div class="card">
+                        <a href="/ent.html">
+                            <img src="/images/p08.jpg" alt="" class="card-img-top category-img">
+
+                            <div class="card-body">
+                                <h5 class="card-title">ENT</h5>
+                            </div>
+                        </a>                            
+                    </div>
+                </div>
+                
             </div>
         </div>
-         
         
-          
-        <script src="js/index.js"></script>
-        <script>
-               firebase.auth().onAuthStateChanged(function(user)
-               {
-                    if(!user)
-                    {
-                        window.location.href = "signin.html";
-                    }
-               });
-        </script>
-    </body>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+           firebase.auth().onAuthStateChanged(function(user)
+           {
+                if(!user)
+                {
+                    window.location.href = "signin.html";
+                }
+           });
+    </script>
+    
+</body>
+
+
 </html>
