@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+
+    --primary-color: #8717ff;
+    --primary-color-light: #b66fe8;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.root{
+    display: flex;
+}
+
+.side-nav{
+    background-color: var(--primary-color);
+    height: 100vh;
+    /* flex: 0 0 5%; */
+    flex: 5;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 4em;
+}
+
+.dashboard-main-container{
+    /* background-color: lightgray; */
+    height: 100vh;
+    /* flex: 0 0 95%; */
+    padding: 2em 1em 0 1em;
+
+    flex: 95;
+}
+
+.title{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: red; */
+}
+
+.title i{
+    color: red;
+
+}
+
+.title-underline{
+    height: 3px;
+    width: 14%;
+
+    background-color: var(--primary-color);
+    margin: 0 0 3em 0;
+}
+
+.menu-icon{
+    color: white;
+    /* background-color: red; */
+
+    padding: 1.5em 0 1.5em 0;
+    margin: .2em 0 .2em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon:hover{
+    background-color: var(--primary-color-light);
+    color: white;
+}
+
+.menu-selected{
+    background-color: var(--primary-color-light);
+    color: white;
+}
+
+.card{
+    margin-bottom: 1em;
+}
+
+.card:hover{
+    box-shadow: 10px -10px 50px rgb(0, 0, 0, .3);
+}
+
+.category-img{
+    height: 12em;
+    object-fit: cover;
+}
+
+.doc-card a {
+    display: flex;
+}
+
+.doc-img{
+    padding: .3em 0 0 .3em;
+    border-radius: .3em;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    /* flex: 1; */
+}
+
+.doc-card-body{
+    padding: 1em 1em 2em 1em;
+    /* flex: 5; */
+}
+
+
+.doc-card-body .card-title{
+    height: 2.9rem;
+    overflow: hidden;
+}
+
+.doc-description{
+    height: 7.4rem;
+    overflow: hidden;
+}
+
+/* .sub-card{
+    margin-bottom: 1em;
+}
+.sub-card:hover{
+    box-shadow: 10px -10px 50px rgb(0, 0, 0, .3);
+}
+.sub-card img{
+    height: 23em;
+    object-fit: cover;
+} */
+
+.sub-title-underline{
+    height: 3px;
+    width: 22%;
+
+    background-color: var(--primary-color);
+    margin: 0 0 3em 0;
+
+}
+
+.card-title{
+    color: darkgreen;
+}
+
+
+
+
